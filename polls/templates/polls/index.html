@@ -28,18 +28,107 @@
 
   <!-- internal CSS -->
   <style>
+    .center{
+      text-align: center;
+    }
 
+    .buttons{
+      border-radius: 25px;
+      padding:10px;
+    }
+
+    .submitbutton{
+      /* from W3Schools */
+      background-color: #29bfff;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+
+      margin-top:100px;
+    }
+
+    ul.nav a:hover{
+      color: #ff834f; !important
+      text-decoration:underline;
+    }
+
+    .background{
+      background-color: #ff834f;
+    }
 
   </style>
 
   <body>
-  <div class="container-fluid pt-20">
+  <div class="container-fluid pt-10">
     <!-- logo -->
-    <div class="row font" style="background: #ffffff; padding: -20px; font-size:1.5em">
-      <img src="{% static 'polls/images/cv_logo.png' %}" alt="" width="350" height="150">
+    <div class="row font" style="background: #ffffff; padding: -10px; font-size:1.5em">
+      <div class="col-xl-12">
+        <nav class="navbar navbar-expand-md sticky-top">
+
+          <a class="navbar-brand font" href="http://127.0.0.1:8000/" style="color:#ffffff; padding-top:10px">
+            <img src="{% static 'polls/images/cv_logo.png' %}" alt="" width="300" height="75">
+          </a>
+
+          <!-- collapsable nav bar -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"><img src="https://21thirteen.com/wp-content/uploads/2016/03/hamburger-menu.jpg" alt="Scroll bar"
+            style="width:30px;height:30px" /></span>
+          </button>
+
+          <!-- nav bar content -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" style="margin-top: 10px; margin-bottom: 10px">
+            <!-- for registration tab -->
+              <li>
+                <div class="col-xl-2 nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/registration" style="text-align:center; margin-left:50px; margin-top:20px; color:#000000;
+                  font-size:0.65em">Registration</a>
+                </div>
+              </li>
+
+              <li>
+                <div class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/login" style="text-align:center; margin-left:20px; margin-top:20px; color:#000000;
+                  font-size:0.65em">Login</a>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </nav>
+      </div>
     </div>
 
+    <div class="row background">
+      <div class="col-xl-2">
 
+      </div>
+      <!-- mission statement content -->
+      <div class="col-xl-8" style="text-align:center; padding:100px; color:#ffffff">
+        <h2>Welcome to CV Clinic!</h2>
+        <p>We contribute a potential solution to orderly distributing COVID-19 vaccinations to the community.</p>
+
+        <div class="buttons center">
+          <button type="submitbutton" name="register-button" onclick='myClick(){
+            location.href = "http://127.0.0.1:8000/registration";
+          }'>
+
+          </button>
+        </div>
+
+      </div>
+      <!-- for spacing -->
+      <div class="col-xl-2">
+
+      </div>
+    </div>
   </div>
   </body>
 </html>
