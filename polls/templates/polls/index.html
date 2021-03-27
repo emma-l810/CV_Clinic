@@ -37,26 +37,10 @@
       padding:10px;
     }
 
-    .submitbutton{
-      /* from W3Schools */
-      background-color: #29bfff;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-
-      margin-top:100px;
-    }
-
-    ul.nav a:hover{
+    /* ul.nav a:hover{
       color: #ff834f; !important
       text-decoration:underline;
-    }
+    } */
 
     .background{
       background-color: #ff834f;
@@ -88,13 +72,13 @@
               <li>
                 <div class="col-xl-2 nav-item">
                   <a class="nav-link" href="http://127.0.0.1:8000/registration" style="text-align:center; margin-left:50px; margin-top:20px; color:#000000;
-                  font-size:0.65em">Registration</a>
+                  font-size:0.65em">Register</a>
                 </div>
               </li>
 
               <li>
-                <div class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:8000/login" style="text-align:center; margin-left:20px; margin-top:20px; color:#000000;
+                <div class="col-xl-2 nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/login" style="text-align:center; margin-left:10px; margin-top:20px; color:#000000;
                   font-size:0.65em">Login</a>
                 </div>
               </li>
@@ -113,21 +97,33 @@
       <!-- mission statement content -->
       <div class="col-xl-8" style="text-align:center; padding:100px; color:#ffffff">
         <h2>Welcome to CV Clinic!</h2>
-        <p>We contribute a potential solution to orderly distributing COVID-19 vaccinations to the community.</p>
+        <p>
+          We contribute a potential solution to orderly distributing COVID-19 vaccinations to the community.
+          The sooner everyone is vaccinated, the sooner things can get back to normal. Register for your appointment today!
+        </p>
 
-        <div class="buttons center">
-          <button type="submitbutton" name="register-button" onclick='myClick(){
-            location.href = "http://127.0.0.1:8000/registration";
-          }'>
+        <br><br>
 
-          </button>
+        <div class="center buttons" style="background-color:#ffffff">
+          <a href="http://127.0.0.1:8000/registration" style="text-decoration: none; color:#4D4D4D"><h2>REGISTER NOW! →</h2></a>
         </div>
-
       </div>
       <!-- for spacing -->
       <div class="col-xl-2">
 
       </div>
+
+      <!-- <div class="col-xl-4">
+
+      </div>
+      <div class="col-xl-4">
+        <div class="center buttons" style="background-color:#ffffff">
+          <h2>REGISTRATION</h2>
+        </div>
+      </div>
+      <div class="col-xl-4">
+
+      </div> -->
     </div>
   </div>
   </body>

@@ -1,0 +1,95 @@
+{% load static %}
+<!-- static css sheet -->
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CV Clinic</title>
+
+    <!-- BOOTSTRAP IMPORTS START -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- BOOTSTRAP IMPORTS END -->
+
+  </head>
+
+  <!-- internal CSS -->
+  <style>
+    .center{
+      text-align: center;
+    }
+
+    .buttons{
+      border-radius: 25px;
+      padding:10px;
+    }
+
+    .background{
+      background-color: #ff834f;
+    }
+
+</style>
+
+  <body>
+  <div class="container-fluid pt-10">
+    <!-- logo -->
+    <div class="row font" style="background: #ffffff; padding: -10px; font-size:1.5em">
+      <div class="col-xl-12">
+        <nav class="navbar navbar-expand-md sticky-top">
+
+          <a class="navbar-brand font" href="http://127.0.0.1:8000/" style="color:#ffffff; padding-top:10px">
+            <img src="{% static 'polls/images/cv_logo.png' %}" alt="" width="300" height="75">
+          </a>
+
+          <!-- collapsable nav bar -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"><img src="https://21thirteen.com/wp-content/uploads/2016/03/hamburger-menu.jpg" alt="Scroll bar"
+            style="width:30px;height:30px" /></span>
+          </button>
+
+          <!-- nav bar content -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" style="margin-top: 10px; margin-bottom: 10px">
+            <!-- for registration tab -->
+              <li>
+                <div class="col-xl-2 col-md-2 nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/registration" style="text-align:center; margin-left:50px; margin-top:20px; color:#000000;
+                  font-size:0.65em">Register</a>
+                </div>
+              </li>
+
+              <li>
+                <div class="col-xl-2 cold-md-2 nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/login" style="text-align:center; margin-left:10px; margin-top:20px; color:#000000;
+                  font-size:0.65em">Login</a>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row" style="background-image: url(https://image.freepik.com/free-photo/orange-acrylic-paint-textured-background_53876-88475.jpg)">
+      <div class="center">
+
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
