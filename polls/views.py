@@ -6,3 +6,8 @@ from django.contrib.auth.models import User
 def index(request):
     context = {}
     return render(request, 'polls/index.html', context)
+    # return HttpResponse("this is views.py in polls")
+
+def registration(request):
+    context = {}
+    return render(request, 'polls/registration.html', context)
