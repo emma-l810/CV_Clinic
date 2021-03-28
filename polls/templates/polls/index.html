@@ -37,19 +37,23 @@
       padding:10px;
     }
 
+    .buttons:hover{
+      color: #FFAE78;
+    }
+
     /* ul.nav a:hover{
       color: #ff834f; !important
       text-decoration:underline;
     } */
 
-    .background{
-      background-color: #ff834f;
+    body{
+      background-color: #FFAE78;
     }
 
   </style>
 
   <body>
-  <div class="container-fluid pt-10">
+  <div class="container-fluid pt-10 h-100 ">
     <!-- logo -->
     <div class="row font" style="background: #ffffff; padding: -10px; font-size:1.5em">
       <div class="col-xl-12">
@@ -90,22 +94,34 @@
       </div>
     </div>
 
-    <div class="row background">
+    <div class="row h-100 justify-content-center align-items-center">
       <div class="col-xl-2">
 
       </div>
       <!-- mission statement content -->
-      <div class="col-xl-8" style="text-align:center; padding:100px; color:#ffffff">
+      <div class="col-xl-8" style="text-align:center; padding-top:50px; padding-bottom:150px; color:#ffffff">
         <h2>Welcome to CV Clinic!</h2>
         <p>
-          We contribute a potential solution to orderly distributing COVID-19 vaccinations to the community.
-          The sooner everyone is vaccinated, the sooner things can get back to normal. Register for your appointment today!
+          <strong>We contribute a potential solution to orderly distributing COVID-19 vaccinations to the community.</strong>
         </p>
+        <!-- start from CDC Newsletter template -->
+        <br>
+        <p>It’s hard to imagine a time when we didn’t know COVID-19 existed. Now when people say “virus,” we know
+          what they mean. The impact of COVID-19 on our lives, our activities, and our freedom has affected us all.
+          The responsibility is ours, as a community, to help stop this virus. Now we have a new, safe, and
+          effective tool to help us do that—COVID-19 vaccines.
+        </p>
+        <br>
+        <p>We all need to step up to beat COVID-19. We ask you to join us in protecting yourself, your family and friends,
+          and our community by getting vaccinated. The sooner everyone is vaccinated, the sooner things can get back to normal.
+          <strong>Register for your appointment today!</strong>
+        </p>
+        <!-- end start from CDC Newsletter template (at by getting vaccinated) -->
 
         <br><br>
 
         <div class="center buttons" style="background-color:#ffffff">
-          <a href="http://127.0.0.1:8000/registration" style="text-decoration: none; color:#4D4D4D"><h2>REGISTER NOW! →</h2></a>
+          <a href="http://127.0.0.1:8000/registration" style="text-decoration: none; color:#FF834F"><h2>REGISTER NOW! →</h2></a>
         </div>
       </div>
       <!-- for spacing -->

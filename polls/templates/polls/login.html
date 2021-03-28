@@ -1,0 +1,206 @@
+{% load static %}
+<!-- static css sheet -->
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CV Clinic</title>
+
+    <!-- BOOTSTRAP IMPORTS START -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- BOOTSTRAP IMPORTS END -->
+
+  </head>
+
+  <!-- internal CSS -->
+  <style>
+    .center{
+      text-align: center;
+    }
+
+    .buttons{
+      border-radius: 25px;
+      padding:10px;
+    }
+
+    /* start of first example of https://speckyboy.com/login-pages-html5-css/ */
+    body {
+       background-color: #FFAE78;
+       font-family: 'Ubuntu', sans-serif;
+   }
+
+   .main {
+       background-color: #FFFFFF;
+       width: 400px;
+       height: 400px;
+       margin: 7em auto;
+       border-radius: 1.5em;
+       box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+   }
+
+   .sign {
+       padding-top: 40px;
+       color: #FF834F;
+       font-family: 'Ubuntu', sans-serif;
+       font-weight: bold;
+       font-size: 23px;
+   }
+
+   .un {
+     width: 76%;
+     color: rgb(38, 50, 56);
+     font-weight: 700;
+     font-size: 14px;
+     letter-spacing: 1px;
+     background: rgba(136, 126, 126, 0.04);
+     padding: 10px 20px;
+     border: none;
+     border-radius: 20px;
+     outline: none;
+     box-sizing: border-box;
+     border: 2px solid rgba(0, 0, 0, 0.02);
+     margin-bottom: 50px;
+     margin-left: 46px;
+     text-align: center;
+     margin-bottom: 27px;
+     font-family: 'Ubuntu', sans-serif;
+   }
+
+   form.form1 {
+       padding-top: 40px;
+   }
+
+   .pass {
+           width: 76%;
+           color: rgb(38, 50, 56);
+           font-weight: 700;
+           font-size: 14px;
+           letter-spacing: 1px;
+           background: rgba(136, 126, 126, 0.04);
+           padding: 10px 20px;
+           border: none;
+           border-radius: 20px;
+           outline: none;
+           box-sizing: border-box;
+           border: 2px solid rgba(0, 0, 0, 0.02);
+           margin-bottom: 50px;
+           margin-left: 46px;
+           text-align: center;
+           margin-bottom: 27px;
+           font-family: 'Ubuntu', sans-serif;
+   }
+
+
+   .un:focus, .pass:focus {
+       border: 2px solid rgba(0, 0, 0, 0.18) !important;
+
+   }
+
+   .submit {
+     cursor: pointer;
+       border-radius: 5em;
+       color: #fff;
+       background: linear-gradient(to right, #FF834F, #FFAE78);
+       border: 0;
+       padding-left: 40px;
+       padding-right: 40px;
+       padding-bottom: 10px;
+       padding-top: 10px;
+       font-family: 'Ubuntu', sans-serif;
+       margin-left: 35%;
+       font-size: 13px;
+       box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+   }
+
+   .forgot {
+       text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+       color: #FF834F;
+       padding-top: 15px;
+   }
+
+   a {
+       text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+       color: #FF834F;
+       text-decoration: none
+   }
+
+   @media (max-width: 600px) {
+       .main {
+           border-radius: 0px;
+       }
+  /* end of first example of https://speckyboy.com/login-pages-html5-css/ */
+
+</style>
+
+  <body>
+  <div class="container-fluid pt-10">
+    <!-- logo -->
+    <div class="row font" style="background: #ffffff; padding: -10px; font-size:1.5em">
+      <div class="col-xl-12">
+        <nav class="navbar navbar-expand-md sticky-top">
+
+          <a class="navbar-brand font" href="http://127.0.0.1:8000/" style="color:#ffffff; padding-top:10px">
+            <img src="{% static 'polls/images/cv_logo.png' %}" alt="" width="300" height="75">
+          </a>
+
+          <!-- collapsable nav bar -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"><img src="https://21thirteen.com/wp-content/uploads/2016/03/hamburger-menu.jpg" alt="Scroll bar"
+            style="width:30px;height:30px" /></span>
+          </button>
+
+          <!-- nav bar content -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" style="margin-top: 10px; margin-bottom: 10px">
+            <!-- for registration tab -->
+              <li>
+                <div class="col-xl-2 col-md-2 nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/registration" style="text-align:center; margin-left:50px; margin-top:20px; color:#000000;
+                  font-size:0.65em">Register</a>
+                </div>
+              </li>
+
+              <li>
+                <div class="col-xl-2 cold-md-2 nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/login" style="text-align:center; margin-left:10px; margin-top:20px; color:#000000;
+                  font-size:0.65em">Login</a>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- start first example from https://speckyboy.com/login-pages-html5-css/ -->
+      <div class="main">
+        <p class="sign" align="center">Sign in</p>
+        <form class="form1">
+          <input class="un " type="text" align="center" placeholder="Username">
+          <input class="pass" type="password" align="center" placeholder="Password">
+          <a class="submit" align="center">Sign in</a>
+          <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+        </form>
+      </div>
+      <!-- end first example from https://speckyboy.com/login-pages-html5-css/ -->
+    </div>
+  </div>
+  </body>
+</html>
